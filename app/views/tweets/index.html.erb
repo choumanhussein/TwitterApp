@@ -1,0 +1,55 @@
+<div class="home_0">
+  <span>Home</span>
+  <div class="tweet_btn_mini">
+  <%= image_tag "messi.png", size: '28x28' %>
+  </div>
+</div>
+<div class="box_0">
+  <%= image_tag "cristiano.png", size: '50x50', class: "acc_pic" %>
+  <span class="now">Tweet ？</span>
+</div>
+<div class="box_btn_0">
+  <div class="tweet_btn_mini">
+    <%= link_to 'Tweet', new_tweet_path , class: "menu_btn_mini" %>
+  </div>
+</div>
+<div class="bold_border"></div>
+<% @tweet.each do |tweet| %>
+<div class="tweet_box">
+  <table>
+    <tr>
+      <td class="img">
+        <%= image_tag "cristiano.png", size: '50x50', class: "acc_pic" %>
+      </td>
+      <td class="name_and_content">
+        <span class="acc_name">Cristiano Ronaldo</span>
+        <span class="acc_name_thin">@MessiIsBetter</span>
+        <div class="main_tweet"><%= tweet.content %></div>
+      </td>
+      <td class="edit">
+        <%= link_to edit_tweet_path(tweet.id)do %>
+          <%= image_tag "edit.png", size: '14x14' %>
+        <% end %>
+      </td>
+      <td class="edit">
+      <%= link_to tweet_path(tweet.id)do %>
+        <%= image_tag "delete.png", size: '14x14' %>
+      <% end %>
+      </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+          <div class="tweet_box_gadget">
+            <%= image_tag "rep.png", size: '14x14', class: 'gadget-pics' %>
+            <%= image_tag "retweet.png", size: '14x14', class: 'gadget-pics' %>
+            <%= image_tag "fav.png", size: '14x14', class: 'gadget-pics' %>
+            <%= image_tag "link.png", size: '14x14', class: 'gadget-pics' %>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+  </table>
+</div>
+<% end %>

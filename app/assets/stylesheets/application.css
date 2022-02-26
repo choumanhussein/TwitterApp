@@ -1,0 +1,318 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+}
+
+header {
+  float: left;
+  width: 260px;
+  padding-left: 50px;
+}
+
+article {
+  margin-left:342px;
+}
+
+.menu_1 {
+  padding:10px 0 0 2px;
+  position: fixed;
+  margin-left:30px;
+}
+
+.twitter_bird {
+  margin-left:6px;
+}
+
+.menu_1 p{
+  width: 190px;
+  height: 32px;
+  padding:3px 0px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menu_1 p:hover{
+  color: #5AA3DA;
+  background-color: #E7F5FD;
+  border-radius: 20px;
+}
+
+.menu_1_btn {
+  margin-top: 40px;
+}
+
+.left_home {
+  color: #5AA3DA;
+  margin-top: 0px;
+
+}
+
+th {
+   text-align: left;
+ }
+
+.menu-btn{
+   background-color: #5AA3DA;
+   color: white;
+   padding: 18px 72px;
+   text-decoration: none;
+   border-radius: 30px;
+   font-weight: bold;
+
+ }
+
+.menu_btn_mini{
+  background-color: #5AA3DA;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-right: 200px;
+}
+
+.tweets {
+  border-left: solid #E6ECF0 thin;
+  border-right: solid #E6ECF0 thin;
+  float: left;
+  width: 600px;
+}
+
+.menu_2 {
+  float: left;
+  width: 380px;
+  margin-left:940px;
+  position:fixed;
+}
+
+
+.acc_name {
+  font-weight: bold;
+}
+
+.acc_name_thin {
+  color: grey;
+  font-size: 14px;
+}
+
+.home_0 {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  border-bottom: solid #E6ECF0 thin;
+}
+
+.acc_pic {
+  border-radius: 30px
+}
+
+.tweet_box {
+  padding: 10px;
+  border-top: solid #E6ECF0 thin;
+}
+
+.tweet_box:hover {
+  background-color: #F5F8FA;
+}
+
+.box_0 {
+  padding: 10px;
+}
+
+.box_gadget{
+  padding: 0 0 0 10px;
+}
+
+.gadget-pics{
+  margin: 0 60px 0 0;
+  padding: 0;
+}
+
+.tweet_btn_mini {
+  float: right;
+  font-weight: bold;
+  margin-right: 50px;
+}
+
+.img {
+  float:left;
+}
+
+.edit {
+  padding-top:5px;
+  vertical-align: top;
+}
+
+.edit img{
+  padding-left:6px;
+}
+
+.name_and_content{
+  padding-left: 10px;
+  vertical-align: top;
+}
+
+.now {
+  padding-left: 10px;
+  color: grey;
+  font-size: 25px;
+}
+
+.box_btn_0{
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.main_tweet{
+  width:455px;
+}
+
+.bold_border {
+  height:10px;
+  background-color: #E6ECF0;
+}
+
+input[type="text"] {
+  width: 500px;
+  height: 200px;
+  font-size:20px;
+}
+
+.search-box{
+  width:300px;
+  height:28px;
+  font-size:15px;
+  color: grey;
+  margin: 9px 0 0 34px;
+  padding: 10px 5px 5px 10px;
+  background-color: #E6ECF0;
+  border-radius: 28px;
+}
+
+.search-img {
+  padding-left: 5px;
+  margin-right: 20px;
+}
+
+.news{
+  height: 100%;
+  background-color: #F5F8FA;
+  border-radius: 10px;
+  margin: 20px 34px 0 34px;
+  padding:10px 0 0px 0;
+}
+
+.news h2{
+  margin:0px;
+  padding:0 0 10px 20px;
+  font-size: 20px;
+}
+
+.news p{
+  margin:0 0 0 0;
+  padding:10px 0 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-top: solid #E6ECF0 thin;
+  cursor: pointer;
+}
+
+
+.news p:hover{
+  background-color: #EDF2F5;
+}
+
+.users{
+  height: 100%;
+  background-color: #F5F8FA;
+  border-radius: 10px;
+  margin: 20px 34px 0 34px;
+  padding:10px 0 0px 0;
+}
+
+.users h2{
+  margin:0px;
+  padding:0 0 10px 20px;
+  font-size: 20px;
+}
+
+.users table{
+  text-align: left;
+  padding-left: 16px;
+}
+
+.users table {
+  line-height: 1;
+  border-top: solid #E6ECF0 thin;
+}
+
+.bold_span{
+  margin:0;
+  padding:0;
+  height:5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.grey_span {
+  color:grey;
+  font-size: 14px;
+  padding-top: -5px;
+}
+
+.users p{
+  margin:0 0 0 0;
+  padding:10px 0 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-top: solid #E6ECF0 thin;
+}
+
+.users p:hover{
+  background-color: #EDF2F5;
+}
+
+.users div{
+  border-top: solid #E6ECF0 thin;
+}
+
+.users div:hover{
+  background-color: #EDF2F5;
+}
+
+.users td {
+  padding: 10px 10px 10px 0px;
+}
+
+.recommend_user {
+  margin:0 0 0 0;
+  padding:10px 0 10px 0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.more_recommend{
+  color: #5AA3DA;
+  cursor: pointer;
+}
+
+.more_recommend:hover{
+  border-radius: 0px 0px 10px 10px;
+}
+
+.footer {
+  height: 100px;
+  width: 300px;
+  padding-left: 20px;
+  margin-top:14px;
+}
+
+.footer_info p{
+  color: grey;
+  font-size: 12px;
+  float: left;
+  margin: 10px 0px 0px 20px;
+  padding:0;
+}

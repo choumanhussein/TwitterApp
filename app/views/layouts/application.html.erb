@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TweetApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <header class="header clearfix">
+      <div class="menu_1">
+        <%= link_to tweets_path do %>
+          <%= image_tag "logo.png", size: '50x50', class: 'tweet-bird' %>
+        <% end %>
+        <p class="home-1">&nbsp;&nbsp;○&nbsp;&nbspHome</p>
+        <p>&nbsp;&nbsp;○&nbsp;&nbsp;Topics</p>
+        <p>&nbsp;&nbsp;○&nbsp;&nbsp;Notification</p>
+        <p>&nbsp;&nbsp;○&nbsp;&nbsp;Message</p>
+        <div class="menu_1_btn">
+          <%= link_to 'Tweet', new_tweet_path, class: "menu-btn" %>
+        </div>
+      </div>
+    </header>
+    <article class="tweets">
+      <%= yield %>
+    </article>
+    <aside class="menu_2">
+      <div class="search-box">
+        <%= image_tag "search.png", size: '14x14', class: 'search-img' %>
+      </div>
+      <div class="news">
+        <h2>For You !</h2>
+        <p>Football</p>
+        <p>Barcelona</p>
+        <p>Real De Madrid</p>
+        <p>#Classico</p>
+        <p class="more_recommend">See More</p>
+      </div>
+      <div class="users">
+        <h2>Users</h2>
+        <div>
+          <table>
+            <tr>
+              <td><%= image_tag "messi.png", size: '50x50', class: "account_pic" %></td>
+              <td><span class="bold_span">Lionel Messi</span><br><span class="grey_span">@GreatPlayer!</span></td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table>
+            <tr>
+              <td><%= image_tag "cristiano.png", size: '50x50', class: "account_pic" %></td>
+              <td><span class="bold_span">Cristiano Ronaldo</span><br>
+                <span class="grey_span">@MessiIsBetter</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table>
+            <tr>
+              <td><%= image_tag "zidane.png", size: '50x50', class: "account_pic" %></td>
+              <td><span class="bold_span">Zinedine Zidane</span><br>
+                <span class="grey_span">@TheKing</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="more_recommend">See More</p>
+      </div>
+      <footer class="footer">
+        <div class="footer_info">
+          <p>Terms Of Use</p>
+          <p>Privacy Policy</p>
+          <p>Cookies</p>
+          <p>Ads</p>
+          <p>More</p>
+          <p>© 2022 Tweeter, Inc.</p>
+        </div>
+      </footer>
+    </aside>
+  </body>
+</html>
